@@ -8,6 +8,20 @@ $police-font-text: "Roboto", sans-serif;
 
 // les couleurs de mon site
 // les couleurs principaux :
+$background: #f6f6f6;
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
-$ternary-color: #99e2d0;
+$btn-gradient-color: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+);
+$btn-gradient-color-hover: linear-gradient(
+    0deg,
+    rgb(165, 123, 216) 0%,
+    rgb(253, 156, 226) 100%
+);
+$green-color: #99e2d0;
+$green-font: #008766;
+$bleu-color: #89c8fa;
+$bleu2-color: #003a68;
