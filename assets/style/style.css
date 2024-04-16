@@ -120,6 +120,12 @@ button {
   margin: 0;
 }
 
+.home-card__info__like {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -171,6 +177,7 @@ h3 {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 0.5rem;
   background: #99e2d0;
+  border-radius: 0.125rem;
   color: #008766;
 }
 
@@ -180,12 +187,27 @@ h3 {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+@media (min-width: 1392px) {
+  .home-card {
+    width: 31.16544rem;
+  }
 }
 .home-card__img {
-  width: 21.625rem;
   height: 14.4375rem;
   object-fit: cover;
   border-radius: 0.93rem 0.93rem 0 0;
+}
+@media (min-width: 1392px) {
+  .home-card__img {
+    width: 31.16544rem;
+  }
+}
+.home-card__tag {
+  position: absolute;
+  top: 0.81rem;
+  right: 0.76rem;
 }
 .home-card__info {
   display: flex;
@@ -199,8 +221,32 @@ h3 {
   justify-content: space-between;
 }
 .home-card__info__like {
-  width: 1.375rem;
-  height: 1.3125rem;
+  position: relative;
+}
+.home-card__info__like__heart {
+  display: block;
+}
+.home-card__info__like__heart-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.home-card__info__like__heart-full:hover {
+  opacity: 1;
+}
+
+.color-heart {
+  background-color: #9356dc;
+  background-image: linear-gradient(180deg, #9356dc, #ff79da);
+  background-size: 100%;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

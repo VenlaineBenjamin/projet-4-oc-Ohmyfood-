@@ -8,6 +8,7 @@
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 0.5rem;
     background: $green-color;
+    border-radius: 0.125rem;
     color: $green-font;
 }
 
@@ -17,12 +18,26 @@
     box-shadow: $shadow-hover;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    @include mode-desktop {
+        width: 31.16544rem;
+    }
 
     &__img {
-        width: 21.625rem;
         height: 14.4375rem;
         object-fit: cover;
         border-radius: 0.93rem 0.93rem 0 0;
+
+        @include mode-desktop {
+            width: 31.16544rem;
+        }
+    }
+
+    &__tag {
+        position: absolute;
+        top: 0.81rem;
+        right: 0.76rem;
     }
 
     &__info {
@@ -38,8 +53,36 @@
         }
 
         &__like {
-            width: 1.375rem;
-            height: 1.3125rem;
+            @extend %center-element;
+            position: relative;
+
+            &__heart {
+                display: block;
+            }
+
+            &__heart-full {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: opacity 200ms;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
+}
+
+.color-heart {
+    background-color: $primary-color;
+    background-image: linear-gradient(180deg, $primary-color, $secondary-color);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
