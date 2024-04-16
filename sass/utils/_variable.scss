@@ -11,17 +11,16 @@ $police-font-text: "Roboto", sans-serif;
 $background: #f6f6f6;
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
-$btn-gradient-color: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 1) 0%,
-    rgba(255, 121, 218, 1) 100%
-);
-$btn-gradient-color-hover: linear-gradient(
-    0deg,
-    rgb(165, 123, 216) 0%,
-    rgb(253, 156, 226) 100%
-);
 $green-color: #99e2d0;
 $green-font: #008766;
 $bleu-color: #89c8fa;
 $bleu2-color: #003a68;
+$btn-gradient-color: linear-gradient(0deg, $primary-color, $secondary-color);
+$btn-gradient-color-hover: linear-gradient(
+    0deg,
+    lighten($primary-color, 5%),
+    lighten($secondary-color, 5%)
+);
+// box-shadow
+$shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$shadow-hover: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
