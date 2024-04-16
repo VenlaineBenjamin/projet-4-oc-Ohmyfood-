@@ -1,4 +1,4 @@
-@mixin btn-principal($font-size: 1.5rem) {
+@mixin btn-principal($font-size: $font-size-btn-principal) {
     font-size: $font-size;
     background: $btn-gradient-color;
     padding: 0.81rem 1rem;

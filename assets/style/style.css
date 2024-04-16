@@ -116,7 +116,7 @@ button {
 }
 
 html {
-  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -128,16 +128,17 @@ h6 {
   font-family: "Shrikhand", serif;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+h1 {
+  font-size: 1.875rem;
 }
-
-button {
-  font-family: "Roboto", sans-serif;
+@media (min-width: 1392px) {
+  h1 {
+    font-size: 2.8rem;
+  }
 }
 
 .button-principal {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: linear-gradient(0deg, #9356dc, #ff79da);
   padding: 0.81rem 1rem;
   color: white;
@@ -148,6 +149,15 @@ button {
 .button-principal:hover {
   background: linear-gradient(0deg, #a16be0, #ff93e1);
   box-sizing: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.tag-new {
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  background: #99e2d0;
+  color: #008766;
 }
 
 /*# sourceMappingURL=style.css.map */

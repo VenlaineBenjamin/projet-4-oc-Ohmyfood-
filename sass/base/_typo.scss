@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-family: $police-font-text;
 }
 
 h1,
@@ -11,10 +11,16 @@ h6 {
     font-family: $police-font-title;
 }
 
+h1 {
+    font-size: $font-size-title;
+
+    @include mode-desktop {
+        font-size: $font-size-title-desktop;
+    }
+}
+
 p {
-    font-family: $police-font-text;
 }
 
 button {
-    font-family: $police-font-text;
 }
