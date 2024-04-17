@@ -1,0 +1,13 @@
+@mixin btn-principal($font-size: $font-size-btn-principal) {
+    font-size: $font-size;
+    background: $btn-gradient-color;
+    padding: 0.81rem 1rem;
+    color: white;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+    box-shadow: $shadow;
+    &:hover {
+        background: $btn-gradient-color-hover;
+        box-sizing: $shadow-hover;
+    }
+}
