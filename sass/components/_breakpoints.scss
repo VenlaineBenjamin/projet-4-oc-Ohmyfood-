@@ -1,5 +1,0 @@
-@mixin mode-desktop {
-    @media (min-width: 1392px) {
-        @content;
-    }
-}
