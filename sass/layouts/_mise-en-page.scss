@@ -55,34 +55,26 @@
         &__like {
             @extend %center-element;
             position: relative;
-
-            &__heart {
-                display: block;
-            }
-
-            &__heart-full {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                opacity: 0;
-                transition: opacity 200ms;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
         }
     }
 }
 
-.color-heart {
-    background-color: $primary-color;
-    background-image: linear-gradient(180deg, $primary-color, $secondary-color);
-    background-size: 100%;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+/* Cacher la case à cocher par défaut */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Créer un style personnalisé pour la case à cocher */
+label {
+    display: inline-block;
+    width: 1.375rem;
+    height: 1.3125rem;
+    background-image: url("/assets/style/images/logo/heart-hollow.png"); /* Remplacez 'votre-image.png' par le chemin de votre image */
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* Style lorsque la case à cocher est cochée */
+input[type="checkbox"]:checked + label {
+    background-image: url("/assets/style/images/logo/heart-full.png"); /* Remplacez 'votre-image-cochée.png' par le chemin de votre image cochée */
 }

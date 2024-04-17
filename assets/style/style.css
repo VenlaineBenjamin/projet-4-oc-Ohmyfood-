@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 *,
 *:before,
@@ -223,30 +224,25 @@ h3 {
 .home-card__info__like {
   position: relative;
 }
-.home-card__info__like__heart {
-  display: block;
-}
-.home-card__info__like__heart-full {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 200ms;
-}
-.home-card__info__like__heart-full:hover {
-  opacity: 1;
+
+/* Cacher la case à cocher par défaut */
+input[type=checkbox] {
+  display: none;
 }
 
-.color-heart {
-  background-color: #9356dc;
-  background-image: linear-gradient(180deg, #9356dc, #ff79da);
-  background-size: 100%;
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+/* Créer un style personnalisé pour la case à cocher */
+label {
+  display: inline-block;
+  width: 1.375rem;
+  height: 1.3125rem;
+  background-image: url("/assets/style/images/logo/heart-hollow.png"); /* Remplacez 'votre-image.png' par le chemin de votre image */
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Style lorsque la case à cocher est cochée */
+input[type=checkbox]:checked + label {
+  background-image: url("/assets/style/images/logo/heart-full.png"); /* Remplacez 'votre-image-cochée.png' par le chemin de votre image cochée */
 }
 
 /*# sourceMappingURL=style.css.map */
