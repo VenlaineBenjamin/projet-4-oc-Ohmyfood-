@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 *,
 *:before,
@@ -223,27 +222,78 @@ h3 {
 }
 .home-card__info__like {
   position: relative;
+  width: 1.375rem;
+  height: 1.3125rem;
 }
 
-/* Cacher la case à cocher par défaut */
 input[type=checkbox] {
   display: none;
 }
 
-/* Créer un style personnalisé pour la case à cocher */
 label {
   display: inline-block;
   width: 1.375rem;
   height: 1.3125rem;
-  background-image: url("/assets/style/images/logo/heart-hollow.png"); /* Remplacez 'votre-image.png' par le chemin de votre image */
+  background-image: url("/assets/style/images/logo/heart-hollow.png");
   background-size: cover;
   cursor: pointer;
-  transition: background-image 0.3s ease;
+  transition: background-image 200ms ease;
 }
 
-/* Style lorsque la case à cocher est cochée */
 input[type=checkbox]:checked + label {
-  background-image: url("/assets/style/images/logo/heart-full.png"); /* Remplacez 'votre-image-cochée.png' par le chemin de votre image cochée */
+  background-image: url("/assets/style/images/logo/heart-full.png");
+}
+
+.menu-card {
+  display: flex;
+  width: 21.8125rem;
+  height: 4.3125rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.94019rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+@media (min-width: 1392px) {
+  .menu-card {
+    width: 31.16544rem;
+  }
+}
+.menu-card__info {
+  position: absolute; /* Ajout de cette ligne */
+  top: 0; /* Ajout de cette ligne */
+  left: 0; /* Ajout de cette ligne */
+  right: 0; /* Ajout de cette ligne */
+  bottom: 0; /* Ajout de cette ligne */
+  padding: 0.94rem;
+  background-color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu-card__price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 0.94rem;
+  display: flex;
+  align-items: end;
+  font-weight: 700;
+}
+.menu-card__check {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.6875rem;
+  background-color: #99e2d0;
+  transform: translateX(100%);
+}
+.menu-card__check i {
+  color: white;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
