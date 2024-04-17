@@ -72,6 +72,7 @@ label {
     background-image: url("/assets/style/images/logo/heart-hollow.png"); /* Remplacez 'votre-image.png' par le chemin de votre image */
     background-size: cover;
     cursor: pointer;
+    transition: background-image 0.3s ease;
 }
 
 /* Style lorsque la case à cocher est cochée */
