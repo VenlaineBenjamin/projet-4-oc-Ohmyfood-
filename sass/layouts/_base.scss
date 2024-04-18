@@ -39,13 +39,59 @@
     gap: 1.5rem;
     padding: 3rem 1.25rem 4.25rem 2rem;
 
-    &__title {
-        align-self: flex-start;
+    @include mode-desktop {
+        padding: 3.125rem 11.25rem;
     }
 
-    &__carde {
+    &__title {
+        align-self: flex-start;
+
+        @include mode-desktop {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__card {
         @extend %center-element;
         flex-direction: column;
         gap: 1.25rem;
+
+        @include mode-desktop {
+            flex-direction: row;
+            gap: 2.28rem;
+        }
+    }
+}
+
+.choise-resto {
+    padding: 3rem 1rem 4rem 1rem;
+    @extend %center-element;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include mode-desktop {
+        padding: 3.125rem 11.25rem;
+    }
+
+    &__title {
+        align-self: flex-start;
+
+        @include mode-desktop {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__card {
+        @extend %center-element;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        @include mode-desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 3.12rem;
+            column-gap: 6.25rem;
+        }
     }
 }
