@@ -39,6 +39,13 @@
     gap: 1.5rem;
     padding: 3rem 1.25rem 4.25rem 2rem;
 
+    i {
+        color: $gray-color;
+    }
+    .info-fonction__card--purple {
+        color: $primary-color;
+    }
+
     @include mode-desktop {
         padding: 3.125rem 11.25rem;
     }
@@ -99,7 +106,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1.3rem 1.5rem;
     background-color: $footer-color;
     color: white;
@@ -117,7 +124,7 @@
     &__link {
         display: flex;
         flex-direction: column;
-        gap: 0.44rem;
+        gap: 0.5rem;
 
         @include mode-desktop {
             flex-direction: row;

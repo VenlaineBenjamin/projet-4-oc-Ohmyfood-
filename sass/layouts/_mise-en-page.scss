@@ -110,7 +110,13 @@ input[type="checkbox"]:checked + label {
         overflow: hidden;
         transition: padding-right 200ms ease-in-out;
 
-        h3 + p {
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        p {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;

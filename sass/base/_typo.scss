@@ -44,3 +44,20 @@ h3 {
     color: $gray-color;
     line-height: normal;
 }
+
+.menu__menu-title {
+    margin-top: 2.6rem;
+    font-weight: 300;
+    font-family: $police-font-text;
+    text-transform: uppercase;
+    align-self: flex-start;
+
+    &::after {
+        content: "";
+        margin-top: 0.5rem;
+        display: block;
+        width: 2.5rem;
+        height: 0.1875rem;
+        background-color: $green-color;
+    }
+}
