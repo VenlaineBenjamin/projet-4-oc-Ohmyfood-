@@ -95,3 +95,48 @@
         }
     }
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.3rem 1.5rem;
+    background-color: $footer-color;
+    color: white;
+
+    @include mode-desktop {
+        flex-direction: row-reverse;
+        padding: 1.875rem 1.5625rem;
+        gap: 3rem;
+    }
+
+    &__title {
+        font-size: $font-size-title-card;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        gap: 0.44rem;
+
+        @include mode-desktop {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    &__link i {
+        margin-right: 1rem;
+        display: inline-block;
+        width: 0.74488rem;
+        height: 0.8125rem;
+    }
+
+    &__link a {
+        color: white;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
