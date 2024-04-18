@@ -19,46 +19,49 @@
         <title>Ohmyfood</title>
     </head>
     <body>
-        <h1>Ohmyfood</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            aliquid, et, voluptates laudantium pariatur ipsam autem atque nulla
-            hic cumque nam obcaecati provident deleniti enim! Nobis sequi quidem
-            similique architecto!
-        </p>
-        <button class="button-principal">Explorer nos restaurants</button>
-        <a href="#" class="home-card" target="_blank">
-            <img
-                src="assets/style/images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="image card 1"
-                class="home-card__img"
-            />
-            <span class="home-card__tag tag-new">Nouveau</span>
-            <article class="home-card__info">
-                <div class="home-card__info__infos">
-                    <h3>La palette du goût</h3>
-                    <p>Brooklyn</p>
-                </div>
-                <div class="home-card__info__like home-card__info__like">
-                    <input type="checkbox" id="myCheckbox" />
-                    <label for="myCheckbox"></label>
-                </div>
-            </article>
-        </a>
-        <section class="menu-card">
-            <article class="menu-card__info">
-                <h3>Œuf au plat</h3>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-            </article>
-            <span class="menu-card__price">76€</span>
-            <article class="menu-card__check">
-                <i class="fa-solid fa-circle-check"></i>
-            </article>
+        <header class="hero-header">
+            <h1>Ohmyfood</h1>
+        </header>
+        <section class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Paris, Belleville</h3>
         </section>
-        <section class="fonction-card">
-            <span class="fonction-card__number">1</span>
-            <i class="fa-solid fa-mobile-screen fonction-card--purple"></i>
-            <h3>Choisissez un restaurant</h3>
+        <section class="home-header">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p class="home-header__para">
+                Découvrez des restaurants d’exception, sélectionnés par nos
+                soins.
+            </p>
+            <button class="button-principal">Explorer nos restaurants</button>
+        </section>
+        <section class="info-fonction">
+            <h2 class="info-fonction__title">Fonctionnement</h2>
+            <div class="info-fonction__carde">
+                <section class="fonction-card">
+                    <span class="fonction-card__number">1</span>
+                    <i
+                        class="fa-solid fa-mobile-screen fa-lg"
+                        style="color: #7e7e7e"
+                    ></i>
+                    <h3>Choisissez un restaurant</h3>
+                </section>
+                <section class="fonction-card">
+                    <span class="fonction-card__number">2</span>
+                    <i
+                        class="fa-solid fa-list-ul fa-lg"
+                        style="color: #7e7e7e"
+                    ></i>
+                    <h3>Composez votre menu</h3>
+                </section>
+                <section class="fonction-card">
+                    <span class="fonction-card__number">3</span>
+                    <i
+                        class="fa-solid fa-store fa-lg"
+                        style="color: #9356dc"
+                    ></i>
+                    <h3>Dégustez au restaurant</h3>
+                </section>
+            </div>
         </section>
     </body>
 </html>

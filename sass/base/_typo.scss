@@ -1,5 +1,6 @@
 html {
     font-family: $police-font-text;
+    line-height: normal;
 }
 
 h1,
@@ -19,6 +20,15 @@ h1 {
     }
 }
 
+h2 {
+    font-family: $police-font-text;
+    font-size: 1.5rem;
+    font-weight: 700;
+    @include mode-desktop {
+        font-size: $font-size-home-title-desktop;
+    }
+}
+
 p {
     line-height: 2rem;
 }
@@ -26,4 +36,11 @@ p {
 h3 {
     font-family: $police-font-text;
     font-weight: 700;
+}
+
+.home-header__para {
+    font-family: $police-font-text;
+    font-size: $font-size-title-card;
+    color: $gray-color;
+    line-height: normal;
 }

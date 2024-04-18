@@ -120,14 +120,15 @@ button {
   margin: 0;
 }
 
-.home-card__info__like {
+.info-fonction__carde, .location, .hero-header, .home-card__info__like {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 html {
   font-family: "Roboto", sans-serif;
+  line-height: normal;
 }
 
 h1,
@@ -148,6 +149,17 @@ h1 {
   }
 }
 
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 1392px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
 p {
   line-height: 2rem;
 }
@@ -155,6 +167,13 @@ p {
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+.home-header__para {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  color: #7e7e7e;
+  line-height: normal;
 }
 
 .button-principal {
@@ -241,7 +260,7 @@ label {
   background-image: url("/assets/style/images/logo/heart-svgrepo-com.svg");
   background-size: cover;
   cursor: pointer;
-  transition: background-image 200ms ease-in-out-in-out;
+  transition: background-image 200ms ease-in-out;
 }
 
 input[type=checkbox]:checked + label {
@@ -343,9 +362,56 @@ input[type=checkbox]:checked + label {
 }
 .fonction-card__number i {
   color: #7e7e7e;
+  font-size: 1.5rem;
 }
 .fonction-card__number--purple {
   color: #9356dc;
+}
+
+.hero-header {
+  height: 7.0625rem;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.hero-header__callback {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.7rem;
+}
+
+.location {
+  background-color: #eaeaea;
+  height: 3.125rem;
+  gap: 1rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  height: 17.875rem;
+  gap: 1.6rem;
+}
+
+.info-fonction {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 1.25rem 4.25rem 2rem;
+}
+.info-fonction__title {
+  align-self: flex-start;
+}
+.info-fonction__carde {
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

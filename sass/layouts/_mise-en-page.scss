@@ -78,7 +78,7 @@ label {
     background-image: url("/assets/style/images/logo/heart-svgrepo-com.svg");
     background-size: cover;
     cursor: pointer;
-    transition: background-image 200ms ease-in-out-in-out;
+    transition: background-image 200ms ease-in-out;
 }
 
 input[type="checkbox"]:checked + label {
@@ -188,6 +188,7 @@ input[type="checkbox"]:checked + label {
 
         i {
             color: $gray-color;
+            font-size: 1.5rem;
         }
 
         &--purple {

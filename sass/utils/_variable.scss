@@ -12,6 +12,7 @@ $background: #f6f6f6;
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $gray-color: #7e7e7e;
+$gray2-color: #eaeaea;
 $green-color: #99e2d0;
 $green-font: #008766;
 $bleu-color: #89c8fa;
@@ -24,10 +25,12 @@ $btn-gradient-color-hover: linear-gradient(
 );
 // box-shadow
 $shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $shadow-hover: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 
 // la taile de mes text
 $font-size-title: 1.875rem;
 $font-size-title-desktop: 2.8rem;
+$font-size-home-title-desktop: 2.5rem;
 $font-size-btn-principal: 1rem;
 $font-size-title-card: 1.125rem;

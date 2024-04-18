@@ -1,0 +1,51 @@
+.hero-header {
+    height: 7.0625rem;
+    background-color: white;
+    @extend %center-element;
+    position: relative;
+    box-shadow: $shadow-header;
+
+    &__callback {
+        position: absolute;
+        left: 1rem;
+        font-size: 1.7rem;
+    }
+}
+
+.location {
+    background-color: $gray2-color;
+    height: 3.125rem;
+    @extend %center-element;
+    gap: 1rem;
+    box-shadow: $shadow-header;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    height: 17.875rem;
+    gap: 1.6rem;
+}
+
+.info-fonction {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 1.25rem 4.25rem 2rem;
+
+    &__title {
+        align-self: flex-start;
+    }
+
+    &__carde {
+        @extend %center-element;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
