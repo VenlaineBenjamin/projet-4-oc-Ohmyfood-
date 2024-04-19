@@ -20,9 +20,11 @@
     flex-direction: column;
     position: relative;
     background-color: white;
+    transition: box-shadow 300ms, transform 300ms;
 
     &:hover {
         box-shadow: $shadow-hover;
+        transform: scale(1.01);
     }
 
     @include mode-desktop {
@@ -94,6 +96,7 @@ input[type="checkbox"]:checked + label {
     border-radius: 0.94019rem;
     box-shadow: $shadow;
     cursor: pointer;
+    transition: box-shadow 300ms;
 
     &:hover {
         box-shadow: $shadow-hover;
@@ -174,6 +177,7 @@ input[type="checkbox"]:checked + label {
     position: relative;
     align-items: center;
     padding: 1.79rem;
+    transition: box-shadow 300ms;
 
     &:hover {
         box-shadow: $shadow-hover;

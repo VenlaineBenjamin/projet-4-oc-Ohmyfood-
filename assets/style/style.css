@@ -229,9 +229,11 @@ h3 {
   flex-direction: column;
   position: relative;
   background-color: white;
+  transition: box-shadow 300ms, transform 300ms;
 }
 .home-card:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  transform: scale(1.01);
 }
 @media (min-width: 768px) {
   .home-card {
@@ -297,6 +299,7 @@ input[type=checkbox]:checked + label {
   border-radius: 0.94019rem;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: box-shadow 300ms;
 }
 .menu-card:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -369,6 +372,7 @@ input[type=checkbox]:checked + label {
   position: relative;
   align-items: center;
   padding: 1.79rem;
+  transition: box-shadow 300ms;
 }
 .fonction-card:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -556,6 +560,45 @@ main {
   }
 }
 
+.bg-image-note {
+  background-image: url("/assets/style/images/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg");
+  width: 100%;
+  height: 17.1875rem;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .bg-image-note {
+    height: 23.9375rem;
+  }
+}
+
+.bg-image-delice {
+  background-image: url("/assets/style/images/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  width: 100%;
+  height: 17.1875rem;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .bg-image-delice {
+    height: 23.9375rem;
+  }
+}
+
+.bg-image-francais {
+  background-image: url("/assets/style/images/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  width: 100%;
+  height: 17.1875rem;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .bg-image-francais {
+    height: 23.9375rem;
+  }
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -563,7 +606,7 @@ main {
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 4rem 4rem 0 0;
-  padding: 4rem 2rem;
+  padding: 4rem 0.5rem;
   transform: translateY(-3.19rem);
 }
 @media (min-width: 768px) {
@@ -574,8 +617,10 @@ main {
 }
 .menu__title {
   font-size: 1.875rem;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .menu__title {
@@ -593,5 +638,7 @@ main {
 .menu .button-principal {
   margin: 2.5rem 0;
 }
+
+/* Styles pour le loader */
 
 /*# sourceMappingURL=style.css.map */
