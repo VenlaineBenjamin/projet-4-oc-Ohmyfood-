@@ -21,6 +21,7 @@
     position: relative;
     background-color: white;
     transition: box-shadow 300ms, transform 300ms;
+    will-change: transform;
 
     &:hover {
         box-shadow: $shadow-hover;
@@ -52,12 +53,15 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
         padding: 1rem;
 
         &__infos {
             flex-direction: column;
             justify-content: space-between;
+
+            h3 {
+                will-change: transform;
+            }
         }
 
         &__like {
@@ -80,7 +84,7 @@ label {
     background-image: url("/assets/style/images/logo/heart-svgrepo-com.svg");
     background-size: cover;
     cursor: pointer;
-    transition: background-image 200ms ease-in-out;
+    transition: background-image 100ms ease-in-out;
 }
 
 input[type="checkbox"]:checked + label {
