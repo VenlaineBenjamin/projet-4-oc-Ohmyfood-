@@ -46,6 +46,7 @@
         position: absolute;
         top: 0.81rem;
         right: 0.76rem;
+        will-change: transform;
     }
 
     &__info {
@@ -84,7 +85,7 @@ label {
     background-image: url("/assets/style/images/logo/heart-svgrepo-com.svg");
     background-size: cover;
     cursor: pointer;
-    transition: background-image 100ms ease-in-out;
+    transition: background-image 100ms ease-in;
 }
 
 input[type="checkbox"]:checked + label {
