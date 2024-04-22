@@ -35,7 +35,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     gap: 1.5rem;
     padding: 3rem 1rem 4rem 1rem;
 
@@ -51,10 +51,10 @@
     }
 
     &__title {
-        transform: translateX(-5rem);
+        // transform: translateX(-rem);
 
         @include mode-desktop {
-            transform: translateX(-28rem);
+            // transform: translateX(-28rem);
             font-size: 1.5rem;
         }
     }
@@ -73,7 +73,7 @@
 
 .choise-resto {
     padding: 3rem 1rem 4rem 1rem;
-    @extend %center-element;
+    display: flex;
     flex-direction: column;
     gap: 1.6rem;
 
@@ -82,10 +82,10 @@
     }
 
     &__title {
-        transform: translateX(-6.3rem);
+        // transform: translateX(-6.3rem);
 
         @include mode-desktop {
-            transform: translateX(-30rem);
+            // transform: translateX(-30rem);
             font-size: 1.5rem;
         }
     }

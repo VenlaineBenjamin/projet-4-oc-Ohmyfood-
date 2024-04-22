@@ -12,7 +12,7 @@ body {
     background-color: $background;
     @extend %center-element;
     @extend %anim-loader;
-    animation: fade-out 500ms 5s ease-out forwards;
+    animation: fade-out 500ms 2s ease-out forwards;
     @extend %anim-fade-out;
 
     &__text {

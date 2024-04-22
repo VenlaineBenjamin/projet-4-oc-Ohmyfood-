@@ -1,9 +1,9 @@
 %anim-loader {
     @keyframes textShine {
-        0% {
+        from {
             background-position: 0% 50%;
         }
-        100% {
+        to {
             background-position: 100% 50%;
         }
     }
@@ -11,12 +11,25 @@
 
 %anim-fade-out {
     @keyframes fade-out {
-        0% {
+        from {
             filter: opacity(1);
         }
-        100% {
+        to {
             filter: opacity(0);
             display: none;
+        }
+    }
+}
+
+%anim-fade-in-right {
+    @keyframes fade-in-right {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
         }
     }
 }
