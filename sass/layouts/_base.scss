@@ -29,16 +29,21 @@
     padding: 4rem 1rem;
     height: 17.875rem;
     gap: 1.6rem;
+    margin: 0 auto;
+
+    @include mode-desktop {
+        max-width: 1440px;
+    }
 }
 
 .info-fonction {
     background-color: white;
     display: flex;
     flex-direction: column;
-    // width: 100%;
-    // align-items: center;
+    box-shadow: 350px 0px 0px 0px #ffffff, -350px 0px 0px 0px #ffffff;
     gap: 1.5rem;
     padding: 3rem 1rem 4rem 1rem;
+    margin: 0 auto;
 
     i {
         color: $gray-color;
@@ -49,6 +54,7 @@
 
     @include mode-desktop {
         padding: 3.1rem 31rem;
+        max-width: 1440px;
     }
 
     @include mode-tablette {
@@ -83,9 +89,11 @@
     flex-direction: column;
     // width: 100%;
     gap: 1.6rem;
+    margin: 0 auto;
 
     @include mode-desktop {
         padding: 3.1rem 31rem;
+        max-width: 1440px;
     }
 
     @include mode-tablette {
@@ -139,7 +147,7 @@
     &__link {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
 
         @include mode-desktop {
             flex-direction: row;

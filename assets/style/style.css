@@ -446,14 +446,22 @@ input[type=checkbox]:checked + label {
   padding: 4rem 1rem;
   height: 17.875rem;
   gap: 1.6rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1440px) {
+  .home-header {
+    max-width: 1440px;
+  }
 }
 
 .info-fonction {
   background-color: white;
   display: flex;
   flex-direction: column;
+  box-shadow: 350px 0px 0px 0px #ffffff, -350px 0px 0px 0px #ffffff;
   gap: 1.5rem;
   padding: 3rem 1rem 4rem 1rem;
+  margin: 0 auto;
 }
 .info-fonction i {
   color: #7e7e7e;
@@ -464,6 +472,7 @@ input[type=checkbox]:checked + label {
 @media screen and (min-width: 1440px) {
   .info-fonction {
     padding: 3.1rem 31rem;
+    max-width: 1440px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -493,10 +502,12 @@ input[type=checkbox]:checked + label {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1440px) {
   .choise-resto {
     padding: 3.1rem 31rem;
+    max-width: 1440px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -546,7 +557,7 @@ input[type=checkbox]:checked + label {
 .footer__link {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 @media screen and (min-width: 1440px) {
   .footer__link {
