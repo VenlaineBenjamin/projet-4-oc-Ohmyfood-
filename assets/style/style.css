@@ -136,7 +136,7 @@ button {
   background-position: center;
   background-size: cover;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .bg-image-francais, .bg-image-delice, .bg-image-note, .bg-image-palette {
     height: 23.9375rem;
   }
@@ -159,7 +159,7 @@ h6 {
 h1 {
   font-size: 1.875rem;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   h1 {
     font-size: 2.8rem;
   }
@@ -170,7 +170,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   h2 {
     font-size: 2.5rem;
   }
@@ -236,6 +236,7 @@ h3 {
 .home-card {
   border-radius: 0.93rem;
   width: 100%;
+  min-width: 21.3rem;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -248,9 +249,10 @@ h3 {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   transform: scale(1.01);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .home-card {
-    width: 31.16544rem;
+    width: 100%;
+    max-width: 31rem;
   }
 }
 .home-card__img {
@@ -258,9 +260,9 @@ h3 {
   object-fit: cover;
   border-radius: 0.93rem 0.93rem 0 0;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .home-card__img {
-    width: 31.16544rem;
+    width: 100%;
   }
 }
 .home-card__tag {
@@ -321,9 +323,9 @@ input[type=checkbox]:checked + label {
 .menu-card:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu-card {
-    width: 31.16544rem;
+    width: 100%;
   }
 }
 .menu-card__info {
@@ -381,6 +383,7 @@ input[type=checkbox]:checked + label {
 .fonction-card {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 100%;
+  min-width: 10rem;
   height: 4.52369rem;
   border-radius: 1.25rem;
   gap: 1.44rem;
@@ -440,7 +443,7 @@ input[type=checkbox]:checked + label {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 4rem;
+  padding: 4rem 1rem;
   height: 17.875rem;
   gap: 1.6rem;
 }
@@ -458,21 +461,27 @@ input[type=checkbox]:checked + label {
 .info-fonction .info-fonction__card--purple {
   color: #9356dc;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .info-fonction {
     padding: 3.1rem 31rem;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .info-fonction {
+    padding: 3.1rem 16rem;
+  }
+}
+@media screen and (min-width: 1440px) {
   .info-fonction__title {
     font-size: 1.5rem;
   }
 }
 .info-fonction__card {
+  width: 100%;
   flex-direction: column;
   gap: 1.25rem;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .info-fonction__card {
     flex-direction: row;
     gap: 2.28rem;
@@ -485,25 +494,32 @@ input[type=checkbox]:checked + label {
   flex-direction: column;
   gap: 1.6rem;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .choise-resto {
     padding: 3.1rem 31rem;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .choise-resto {
+    padding: 3.1rem 16rem;
+  }
+}
+@media screen and (min-width: 1440px) {
   .choise-resto__title {
     font-size: 1.5rem;
   }
 }
 .choise-resto__card {
   flex-direction: column;
+  width: 100%;
   gap: 1.25rem;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .choise-resto__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    justify-items: center;
     row-gap: 3.12rem;
     column-gap: 6.25rem;
   }
@@ -517,7 +533,7 @@ input[type=checkbox]:checked + label {
   background-color: #353535;
   color: white;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .footer {
     flex-direction: row-reverse;
     padding: 1.875rem 1.5625rem;
@@ -532,7 +548,7 @@ input[type=checkbox]:checked + label {
   flex-direction: column;
   gap: 0.5rem;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .footer__link {
     flex-direction: row;
     gap: 1rem;
@@ -634,7 +650,7 @@ main {
   box-shadow: 0px 50px 0px 0px #f6f6f6;
   transform: translateY(-3.19rem);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu {
     padding: 4rem 18rem 0 18rem;
     width: 65.9375rem;
@@ -647,7 +663,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu__title {
     justify-content: center;
     gap: 1.5rem;
@@ -701,7 +717,7 @@ body {
   background-size: 500% auto;
   animation: textShine 2s infinite ease-in-out alternate;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .loader__text {
     font-size: 2.5rem;
   }

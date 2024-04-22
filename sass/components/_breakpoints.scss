@@ -1,5 +1,11 @@
 @mixin mode-desktop {
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin mode-tablette {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
