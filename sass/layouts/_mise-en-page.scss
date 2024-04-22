@@ -38,6 +38,7 @@
         height: 14.4375rem;
         object-fit: cover;
         border-radius: 0.93rem 0.93rem 0 0;
+        width: 100%;
 
         @include mode-desktop {
             width: 100%;

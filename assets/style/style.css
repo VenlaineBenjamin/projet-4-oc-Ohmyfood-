@@ -259,6 +259,7 @@ h3 {
   height: 14.4375rem;
   object-fit: cover;
   border-radius: 0.93rem 0.93rem 0 0;
+  width: 100%;
 }
 @media screen and (min-width: 1440px) {
   .home-card__img {
@@ -726,7 +727,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
-  animation: textShine 2s infinite ease-in-out alternate;
+  animation: textShine 1s infinite ease-in-out alternate;
 }
 @media screen and (min-width: 1440px) {
   .loader__text {
