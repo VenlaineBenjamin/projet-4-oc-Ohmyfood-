@@ -47,13 +47,14 @@
     }
 
     @include mode-desktop {
-        padding: 3.125rem 11.25rem;
+        padding: 3.1rem 31rem;
     }
 
     &__title {
-        align-self: flex-start;
+        transform: translateX(-5rem);
 
         @include mode-desktop {
+            transform: translateX(-28rem);
             font-size: 1.5rem;
         }
     }
@@ -77,13 +78,14 @@
     gap: 1.6rem;
 
     @include mode-desktop {
-        padding: 3.125rem 11.25rem;
+        padding: 3.1rem 31rem;
     }
 
     &__title {
-        align-self: flex-start;
+        transform: translateX(-6.3rem);
 
         @include mode-desktop {
+            transform: translateX(-30rem);
             font-size: 1.5rem;
         }
     }

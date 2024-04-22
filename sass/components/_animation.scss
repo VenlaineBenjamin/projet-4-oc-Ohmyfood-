@@ -1,0 +1,36 @@
+%anim-loader {
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+}
+
+%anim-fade-out {
+    @keyframes fade-out {
+        0% {
+            filter: opacity(1);
+        }
+        100% {
+            filter: opacity(0);
+            display: none;
+        }
+    }
+}
+
+%anim-beat {
+    @keyframes beat {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

@@ -1,1 +1,38 @@
 /* Styles pour le loader */
+body {
+    position: relative;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: $background;
+    @extend %center-element;
+    @extend %anim-loader;
+    animation: fade-out 500ms 5s ease-out forwards;
+    @extend %anim-fade-out;
+
+    &__text {
+        font-family: $police-font-title;
+        font-size: $font-size-title;
+        background: linear-gradient(
+            to right,
+            $primary-color 20%,
+            $secondary-color 30%,
+            $secondary-color 70%,
+            $primary-color 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 500% auto;
+        animation: textShine 2s infinite ease-in-out alternate;
+
+        @include mode-desktop {
+            font-size: $font-size-home-title-desktop;
+        }
+    }
+}

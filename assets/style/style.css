@@ -124,7 +124,7 @@ button {
   margin: 0;
 }
 
-.choise-resto__card, .choise-resto, .info-fonction__card, .location, .hero-header, .home-card__info__like {
+.loader, .choise-resto__card, .choise-resto, .info-fonction__card, .location, .hero-header, .home-card__info__like {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,7 +216,7 @@ h3 {
   border-radius: 1.5625rem;
   cursor: pointer;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: all 200ms;
+  transition: background 200ms, box-shadow 200ms;
 }
 .button-principal:hover {
   background: linear-gradient(0deg, #a16be0, #ff93e1);
@@ -461,14 +461,15 @@ input[type=checkbox]:checked + label {
 }
 @media (min-width: 768px) {
   .info-fonction {
-    padding: 3.125rem 11.25rem;
+    padding: 3.1rem 31rem;
   }
 }
 .info-fonction__title {
-  align-self: flex-start;
+  transform: translateX(-5rem);
 }
 @media (min-width: 768px) {
   .info-fonction__title {
+    transform: translateX(-28rem);
     font-size: 1.5rem;
   }
 }
@@ -490,14 +491,15 @@ input[type=checkbox]:checked + label {
 }
 @media (min-width: 768px) {
   .choise-resto {
-    padding: 3.125rem 11.25rem;
+    padding: 3.1rem 31rem;
   }
 }
 .choise-resto__title {
-  align-self: flex-start;
+  transform: translateX(-6.3rem);
 }
 @media (min-width: 768px) {
   .choise-resto__title {
+    transform: translateX(-30rem);
     font-size: 1.5rem;
   }
 }
@@ -557,11 +559,49 @@ input[type=checkbox]:checked + label {
   color: #ff79da;
 }
 
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0);
+    display: none;
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 main {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hero-header i {
+  animation: beat 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+}
+.hero-header i:hover {
+  animation-play-state: paused;
 }
 
 .bg-image-palette {
@@ -622,5 +662,33 @@ main {
 }
 
 /* Styles pour le loader */
+body {
+  position: relative;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: #f6f6f6;
+  animation: fade-out 500ms 5s ease-out forwards;
+}
+.loader__text {
+  font-family: "Shrikhand", serif;
+  font-size: 1.875rem;
+  background: linear-gradient(to right, #9356dc 20%, #ff79da 30%, #ff79da 70%, #9356dc 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 2s infinite ease-in-out alternate;
+}
+@media (min-width: 768px) {
+  .loader__text {
+    font-size: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
