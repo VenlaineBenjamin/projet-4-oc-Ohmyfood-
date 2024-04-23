@@ -1,3 +1,6 @@
+// mes differentes animation de mon site
+
+// animation pour ma loading page
 %anim-loader {
     @keyframes textShine {
         from {
@@ -9,6 +12,7 @@
     }
 }
 
+// animation pour que la loading page disparaise
 %anim-fade-out {
     @keyframes fade-out {
         from {
@@ -21,6 +25,7 @@
     }
 }
 
+// animation qui fait apparaitre les élément
 %anim-fade-in {
     @keyframes fade-in {
         from {
@@ -32,6 +37,7 @@
     }
 }
 
+// animation qui fait apparaitre les élément par la droite
 %anim-fade-in-right {
     @keyframes fade-in-right {
         from {
@@ -45,6 +51,7 @@
     }
 }
 
+// animation qui fait apparaitre les élément par la gauche
 %anim-fade-in-left {
     @keyframes fade-in-left {
         from {
@@ -58,6 +65,7 @@
     }
 }
 
+// animation pour ma flèche de callback
 %anim-beat {
     @keyframes beat {
         0% {

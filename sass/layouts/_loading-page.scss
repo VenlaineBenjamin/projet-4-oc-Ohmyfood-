@@ -3,6 +3,7 @@ body {
     position: relative;
 }
 
+//l'animation qui se lance au debut du chargement de la page
 .loader {
     position: fixed;
     top: 0;
@@ -25,8 +26,10 @@ body {
             $secondary-color 70%,
             $primary-color 80%
         );
+        -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
+        -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         background-size: 500% auto;
         animation: textShine 1s infinite ease-in-out alternate;

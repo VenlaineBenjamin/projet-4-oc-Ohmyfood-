@@ -1,9 +1,11 @@
+// breakpoint pour les grand écran
 @mixin mode-desktop {
     @media screen and (min-width: 1440px) {
         @content;
     }
 }
 
+// breakpoint pour les ecrans tablettes
 @mixin mode-tablette {
     @media screen and (min-width: 768px) {
         @content;

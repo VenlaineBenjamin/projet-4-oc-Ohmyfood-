@@ -768,8 +768,10 @@ body {
   font-family: "Shrikhand", serif;
   font-size: 1.875rem;
   background: linear-gradient(to right, #9356dc 20%, #ff79da 30%, #ff79da 70%, #9356dc 80%);
+  -moz-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
+  -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
   animation: textShine 1s infinite ease-in-out alternate;
