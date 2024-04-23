@@ -79,8 +79,8 @@ main {
 
         &__plats {
             opacity: 0;
-            animation: fade-in-right 500ms 2.5s ease-in forwards;
-            @extend %anim-fade-in-right;
+            animation: fade-in-left 500ms 2.5s ease-in forwards;
+            @extend %anim-fade-in-left;
         }
 
         &__desserts {

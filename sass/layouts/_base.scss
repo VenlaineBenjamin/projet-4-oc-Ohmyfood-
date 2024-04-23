@@ -87,7 +87,6 @@
     padding: 3rem 1rem 4rem 1rem;
     display: flex;
     flex-direction: column;
-    // width: 100%;
     gap: 1.6rem;
     margin: 0 auto;
 
@@ -101,10 +100,7 @@
     }
 
     &__title {
-        // transform: translateX(-6.3rem);
-
         @include mode-desktop {
-            // transform: translateX(-30rem);
             font-size: 1.5rem;
         }
     }
