@@ -1,7 +1,7 @@
-<svg width="602" height="600" xmlns="http://www.w3.org/2000/svg">
+<svg width="92" height="91" xmlns="http://www.w3.org/2000/svg">
  <g>
   <title>Layer 1</title>
-  <path stroke="#000000" fill="none" d="m300.97147,153.44683c116.75224,-333.27122 574.19137,0 0,428.49157c-574.19137,-428.49157 -116.75224,-761.76279 0,-428.49157z" id="svg_2" stroke-width="30"/>
+  <path stroke="#000000" stroke-width="6" id="svg_2" d="m45.97147,24.63192c16.97682,-48.4606 83.49254,0 0,62.30649c-83.49254,-62.30649 -16.97682,-110.76709 0,-62.30649z" fill="none"/>
  </g>
 
 </svg>

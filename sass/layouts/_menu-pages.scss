@@ -81,7 +81,8 @@ main {
                 opacity: 0;
                 width: 1.375rem;
                 height: 1.3125rem;
-                transition: opacity 300ms ease-in;
+                transition: opacity 300ms ease-in,
+                    transform 300ms 300ms ease-in-out;
 
                 &:hover {
                     opacity: 1;

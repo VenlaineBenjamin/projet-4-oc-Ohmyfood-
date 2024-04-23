@@ -209,6 +209,7 @@ h3 {
 }
 
 .button-principal {
+  position: relative;
   font-size: 1rem;
   background: linear-gradient(0deg, #9356dc, #ff79da);
   padding: 0.81rem 1rem;
@@ -219,8 +220,8 @@ h3 {
   transition: background 200ms, box-shadow 200ms;
 }
 .button-principal:hover {
-  background: linear-gradient(0deg, #a16be0, #ff93e1);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, #a16be0, #ff93e1);
 }
 
 .tag-new {
@@ -721,7 +722,7 @@ main {
   opacity: 0;
   width: 1.375rem;
   height: 1.3125rem;
-  transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in, transform 300ms 300ms ease-in-out;
 }
 .menu__title__like__full:hover {
   opacity: 1;
@@ -768,10 +769,8 @@ body {
   font-family: "Shrikhand", serif;
   font-size: 1.875rem;
   background: linear-gradient(to right, #9356dc 20%, #ff79da 30%, #ff79da 70%, #9356dc 80%);
-  -moz-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
-  -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
   animation: textShine 1s infinite ease-in-out alternate;
