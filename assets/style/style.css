@@ -124,7 +124,7 @@ button {
   margin: 0;
 }
 
-.loader, .choise-resto__card, .info-fonction__card, .location, .hero-header, .home-card__info__like {
+.loader, .menu__title__like, .choise-resto__card, .info-fonction__card, .location, .hero-header, .home-card__info__like {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,24 +290,23 @@ h3 {
   position: relative;
   width: 1.375rem;
   height: 1.3125rem;
+  will-change: transform;
 }
-
-input[type=checkbox] {
-  display: none;
-}
-
-label {
-  display: inline-block;
+.home-card__info__like__hollow {
+  position: relative;
   width: 1.375rem;
   height: 1.3125rem;
-  background-image: url("/assets/style/images/logo/heart-svgrepo-com.svg");
-  background-size: cover;
-  cursor: pointer;
-  transition: background-image 100ms ease-in;
 }
-
-input[type=checkbox]:checked + label {
-  background-image: url("/assets/style/images/logo/heart-full.png");
+.home-card__info__like__full {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 1.375rem;
+  height: 1.3125rem;
+  transition: opacity 300ms ease-in-out;
+}
+.home-card__info__like__full:hover {
+  opacity: 1;
 }
 
 .menu-card {
@@ -700,6 +699,27 @@ main {
     justify-content: center;
     gap: 1.5rem;
   }
+}
+.menu__title__like {
+  width: 1.375rem;
+  height: 1.3125rem;
+  will-change: transform;
+}
+.menu__title__like__hollow {
+  position: relative;
+  width: 1.375rem;
+  height: 1.3125rem;
+}
+.menu__title__like__full {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 1.375rem;
+  height: 1.3125rem;
+  transition: opacity 300ms ease-in;
+}
+.menu__title__like__full:hover {
+  opacity: 1;
 }
 .menu__section {
   display: flex;

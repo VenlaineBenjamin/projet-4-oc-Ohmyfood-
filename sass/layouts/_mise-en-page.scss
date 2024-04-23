@@ -74,26 +74,28 @@
             position: relative;
             width: 1.375rem;
             height: 1.3125rem;
+            will-change: transform;
+
+            &__hollow {
+                position: relative;
+                width: 1.375rem;
+                height: 1.3125rem;
+            }
+
+            &__full {
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                width: 1.375rem;
+                height: 1.3125rem;
+                transition: opacity 300ms ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-label {
-    display: inline-block;
-    width: 1.375rem;
-    height: 1.3125rem;
-    background-image: url("/assets/style/images/logo/heart-svgrepo-com.svg");
-    background-size: cover;
-    cursor: pointer;
-    transition: background-image 100ms ease-in;
-}
-
-input[type="checkbox"]:checked + label {
-    background-image: url("/assets/style/images/logo/heart-full.png");
 }
 
 .menu-card {
