@@ -18,12 +18,7 @@ $green-color: #99e2d0;
 $green-font: #008766;
 $bleu-color: #89c8fa;
 $bleu2-color: #003a68;
-$btn-gradient-color: linear-gradient(0deg, $primary-color, $secondary-color);
-$btn-gradient-color-hover: linear-gradient(
-    0deg,
-    lighten($primary-color, 5%),
-    lighten($secondary-color, 5%)
-);
+
 // box-shadow
 $shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -35,3 +30,4 @@ $font-size-title-desktop: 2.8rem;
 $font-size-home-title-desktop: 2.5rem;
 $font-size-btn-principal: 1rem;
 $font-size-title-card: 1.125rem;
+$font-size-text: 0.8rem;

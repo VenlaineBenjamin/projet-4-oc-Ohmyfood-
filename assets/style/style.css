@@ -212,16 +212,32 @@ h3 {
   position: relative;
   font-size: 1rem;
   background: linear-gradient(0deg, #9356dc, #ff79da);
-  padding: 0.81rem 1rem;
+  padding: 1rem 1rem;
   color: white;
   border-radius: 1.5625rem;
+  z-index: 1;
   cursor: pointer;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: background 200ms, box-shadow 200ms;
+  transition: box-shadow 300ms ease-in;
 }
 .button-principal:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(0deg, #a16be0, #ff93e1);
+}
+.button-principal:hover::after {
+  opacity: 1;
+}
+.button-principal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.5625rem;
+  background: linear-gradient(0deg, #a16be0 0%, #fface8 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms ease-in;
 }
 
 .tag-new {
@@ -245,6 +261,7 @@ h3 {
   background-color: white;
   transition: box-shadow 300ms, transform 300ms;
   will-change: transform;
+  opacity: 0;
 }
 .home-card:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -308,6 +325,22 @@ h3 {
 }
 .home-card__info__like__full:hover {
   opacity: 1;
+}
+
+.home-card:nth-child(1) {
+  animation: fade-in 300ms 2s ease-in forwards;
+}
+
+.home-card:nth-child(2) {
+  animation: fade-in 300ms 2.3s ease-in forwards;
+}
+
+.home-card:nth-child(3) {
+  animation: fade-in 300ms 2.6s ease-in forwards;
+}
+
+.home-card:nth-child(4) {
+  animation: fade-in 300ms 2.9s ease-in forwards;
 }
 
 .menu-card {
@@ -394,6 +427,7 @@ h3 {
   align-items: center;
   padding: 1.79rem;
   transition: box-shadow 300ms;
+  opacity: 0;
 }
 .fonction-card:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -419,6 +453,22 @@ h3 {
   color: #9356dc;
 }
 
+.fonction-card:nth-child(1) {
+  animation: fade-in 300ms 2s ease-in forwards;
+}
+
+.fonction-card:nth-child(2) {
+  animation: fade-in 300ms 2.3s ease-in forwards;
+}
+
+.fonction-card:nth-child(3) {
+  animation: fade-in 300ms 2.6s ease-in forwards;
+}
+
+.fonction-card:nth-child(4) {
+  animation: fade-in 300ms 2.9s ease-in forwards;
+}
+
 .hero-header {
   height: 7.0625rem;
   background-color: white;
@@ -428,7 +478,12 @@ h3 {
 .hero-header__callback {
   position: absolute;
   left: 1rem;
-  font-size: 1.7rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .hero-header__callback {
+    font-size: 1.5rem;
+  }
 }
 
 .location {
@@ -690,6 +745,11 @@ main {
   .menu {
     padding: 4rem 18rem 0 18rem;
     width: 65.9375rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 4rem 10rem 0 10rem;
   }
 }
 .menu__title {
