@@ -9,6 +9,14 @@
         position: absolute;
         left: 1rem;
         font-size: 1rem;
+        will-change: transform;
+        animation: beat 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite
+            alternate;
+        @extend %anim-beat;
+
+        &:hover {
+            animation-play-state: paused;
+        }
 
         @include mode-desktop {
             font-size: 1.5rem;

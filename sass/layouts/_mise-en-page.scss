@@ -140,6 +140,7 @@
         width: 100%;
         overflow: hidden;
         transition: padding-right 200ms ease-in-out;
+        will-change: transform;
 
         h3 {
             overflow: hidden;

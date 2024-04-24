@@ -368,6 +368,7 @@ h3 {
   width: 100%;
   overflow: hidden;
   transition: padding-right 200ms ease-in-out;
+  will-change: transform;
 }
 .menu-card__info h3 {
   overflow: hidden;
@@ -479,6 +480,11 @@ h3 {
   position: absolute;
   left: 1rem;
   font-size: 1rem;
+  will-change: transform;
+  animation: beat 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+}
+.hero-header__callback:hover {
+  animation-play-state: paused;
 }
 @media screen and (min-width: 1440px) {
   .hero-header__callback {
@@ -705,13 +711,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hero-header i {
-  animation: beat 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-}
-.hero-header i:hover {
-  animation-play-state: paused;
 }
 
 .bg-image-palette {
