@@ -93,27 +93,26 @@ main {
         justify-content: center;
         width: 100%;
         gap: 0.75rem;
+        @extend %anim-fade-in-right;
+        @extend %anim-fade-in-left;
 
         &__entrees {
             opacity: 0;
-            animation: fade-in-right 500ms 2s ease-in forwards;
-            @extend %anim-fade-in-right;
+            animation: fade-in-right 300ms 2s ease-in forwards;
         }
 
         &__plats {
             opacity: 0;
-            animation: fade-in-left 500ms 2.5s ease-in forwards;
-            @extend %anim-fade-in-left;
+            animation: fade-in-left 300ms 2.3s ease-in forwards;
         }
 
         &__desserts {
             opacity: 0;
-            animation: fade-in-right 500ms 3s ease-in forwards;
-            @extend %anim-fade-in-right;
+            animation: fade-in-right 300ms 2.6s ease-in forwards;
         }
     }
 
     .button-principal {
-        margin: 2.5rem 0 0 0;
+        margin-top: 2.5rem;
     }
 }

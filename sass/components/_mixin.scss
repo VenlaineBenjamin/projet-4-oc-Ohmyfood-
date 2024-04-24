@@ -32,6 +32,10 @@
         );
         opacity: 0;
         z-index: -1;
-        transition: opacity 300ms ease-in;
+        transition: opacity 200ms ease-in;
     }
+}
+
+@mixin anim_fade_in($delay) {
+    animation: fade-in 300ms $delay ease-in forwards;
 }

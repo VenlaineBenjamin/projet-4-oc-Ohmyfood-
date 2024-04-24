@@ -11,9 +11,9 @@ body {
     height: 100vh;
     z-index: 10;
     background-color: $background;
+    animation: fade-out 500ms 2s ease-out forwards;
     @extend %center-element;
     @extend %anim-loader;
-    animation: fade-out 500ms 2s ease-out forwards;
     @extend %anim-fade-out;
 
     &__text {

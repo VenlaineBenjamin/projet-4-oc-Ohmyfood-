@@ -5,7 +5,7 @@
 .tag-new {
     font-size: 0.875rem;
     font-weight: 500;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: $shadow-header;
     padding: 0.5rem;
     background: $green-color;
     border-radius: 0.125rem;
@@ -21,14 +21,12 @@
     flex-direction: column;
     position: relative;
     background-color: white;
-    transition: box-shadow 300ms, transform 300ms;
-    will-change: transform;
+    transition: box-shadow 300ms;
     opacity: 0;
     @extend %anim-fade-in;
 
     &:hover {
         box-shadow: $shadow-hover;
-        transform: scale(1.01);
     }
 
     @include mode-desktop {
@@ -51,7 +49,6 @@
         position: absolute;
         top: 0.81rem;
         right: 0.76rem;
-        will-change: transform;
     }
 
     &__info {
@@ -64,10 +61,6 @@
         &__infos {
             flex-direction: column;
             justify-content: space-between;
-
-            h3 {
-                will-change: transform;
-            }
         }
 
         &__like {
@@ -75,7 +68,6 @@
             position: relative;
             width: 1.375rem;
             height: 1.3125rem;
-            will-change: transform;
 
             &__hollow {
                 position: relative;
@@ -100,19 +92,19 @@
 }
 
 .home-card:nth-child(1) {
-    animation: fade-in 300ms 2s ease-in forwards;
+    @include anim_fade_in(2s);
 }
 
 .home-card:nth-child(2) {
-    animation: fade-in 300ms 2.3s ease-in forwards;
+    @include anim_fade_in(2.3s);
 }
 
 .home-card:nth-child(3) {
-    animation: fade-in 300ms 2.6s ease-in forwards;
+    @include anim_fade_in(2.6s);
 }
 
 .home-card:nth-child(4) {
-    animation: fade-in 300ms 2.9s ease-in forwards;
+    @include anim_fade_in(2.9s);
 }
 
 .menu-card {
@@ -123,7 +115,6 @@
     overflow: hidden;
     border-radius: 0.94019rem;
     box-shadow: $shadow;
-    cursor: pointer;
     transition: box-shadow 300ms;
 
     &:hover {
@@ -171,6 +162,7 @@
         align-items: center;
         width: 3.6875rem;
         background-color: $green-color;
+        cursor: pointer;
         transform: translateX(100%);
         transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
         position: absolute;
@@ -182,7 +174,13 @@
         i {
             color: white;
             font-size: 1.7rem;
+            transform: rotate(180deg);
+            transition: transform 200ms 100ms ease-in-out;
         }
+    }
+
+    &:hover i {
+        transform: rotate(0deg);
     }
 
     &:hover .menu-card__check {
@@ -240,17 +238,17 @@
 }
 
 .fonction-card:nth-child(1) {
-    animation: fade-in 300ms 2s ease-in forwards;
+    @include anim_fade_in(2s);
 }
 
 .fonction-card:nth-child(2) {
-    animation: fade-in 300ms 2.3s ease-in forwards;
+    @include anim_fade_in(2.3s);
 }
 
 .fonction-card:nth-child(3) {
-    animation: fade-in 300ms 2.6s ease-in forwards;
+    @include anim_fade_in(2.6s);
 }
 
 .fonction-card:nth-child(4) {
-    animation: fade-in 300ms 2.9s ease-in forwards;
+    @include anim_fade_in(2.6s);
 }

@@ -217,11 +217,11 @@ h3 {
   border-radius: 1.5625rem;
   z-index: 1;
   cursor: pointer;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   transition: box-shadow 300ms ease-in;
 }
 .button-principal:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 .button-principal:hover::after {
   opacity: 1;
@@ -237,13 +237,13 @@ h3 {
   background: linear-gradient(0deg, #a16be0 0%, #fface8 100%);
   opacity: 0;
   z-index: -1;
-  transition: opacity 300ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
 .tag-new {
   font-size: 0.875rem;
   font-weight: 500;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 0.5rem;
   background: #99e2d0;
   border-radius: 0.125rem;
@@ -254,18 +254,16 @@ h3 {
   border-radius: 0.93rem;
   width: 100%;
   min-width: 21.3rem;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: white;
-  transition: box-shadow 300ms, transform 300ms;
-  will-change: transform;
+  transition: box-shadow 300ms;
   opacity: 0;
 }
 .home-card:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  transform: scale(1.01);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 @media screen and (min-width: 1440px) {
   .home-card {
@@ -288,7 +286,6 @@ h3 {
   position: absolute;
   top: 0.81rem;
   right: 0.76rem;
-  will-change: transform;
 }
 .home-card__info {
   display: flex;
@@ -301,14 +298,10 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
 }
-.home-card__info__infos h3 {
-  will-change: transform;
-}
 .home-card__info__like {
   position: relative;
   width: 1.375rem;
   height: 1.3125rem;
-  will-change: transform;
 }
 .home-card__info__like__hollow {
   position: relative;
@@ -350,12 +343,11 @@ h3 {
   position: relative;
   overflow: hidden;
   border-radius: 0.94019rem;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   transition: box-shadow 300ms;
 }
 .menu-card:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 @media screen and (min-width: 1440px) {
   .menu-card {
@@ -395,6 +387,7 @@ h3 {
   align-items: center;
   width: 3.6875rem;
   background-color: #99e2d0;
+  cursor: pointer;
   transform: translateX(100%);
   transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
   position: absolute;
@@ -406,6 +399,11 @@ h3 {
 .menu-card__check i {
   color: white;
   font-size: 1.7rem;
+  transform: rotate(180deg);
+  transition: transform 200ms 100ms ease-in-out;
+}
+.menu-card:hover i {
+  transform: rotate(0deg);
 }
 .menu-card:hover .menu-card__check {
   transform: translateX(0);
@@ -416,7 +414,7 @@ h3 {
 }
 
 .fonction-card {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   width: 100%;
   min-width: 10rem;
   height: 4.52369rem;
@@ -431,7 +429,7 @@ h3 {
   opacity: 0;
 }
 .fonction-card:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 .fonction-card__number {
   position: absolute;
@@ -467,14 +465,14 @@ h3 {
 }
 
 .fonction-card:nth-child(4) {
-  animation: fade-in 300ms 2.9s ease-in forwards;
+  animation: fade-in 300ms 2.6s ease-in forwards;
 }
 
 .hero-header {
   height: 7.0625rem;
   background-color: white;
   position: relative;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .hero-header__callback {
   position: absolute;
@@ -496,7 +494,7 @@ h3 {
   background-color: #eaeaea;
   height: 3.125rem;
   gap: 1rem;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .home-header {
@@ -525,7 +523,7 @@ h3 {
   background-color: white;
   display: flex;
   flex-direction: column;
-  box-shadow: 350px 0px 0px 0px #ffffff, -350px 0px 0px 0px #ffffff;
+  box-shadow: 350px 0 0 0 white, -350px 0 0 0 white;
   gap: 1.5rem;
   padding: 3rem 1rem 4rem 1rem;
   margin: 0 auto;
@@ -796,18 +794,18 @@ main {
 }
 .menu__section__entrees {
   opacity: 0;
-  animation: fade-in-right 500ms 2s ease-in forwards;
+  animation: fade-in-right 300ms 2s ease-in forwards;
 }
 .menu__section__plats {
   opacity: 0;
-  animation: fade-in-left 500ms 2.5s ease-in forwards;
+  animation: fade-in-left 300ms 2.3s ease-in forwards;
 }
 .menu__section__desserts {
   opacity: 0;
-  animation: fade-in-right 500ms 3s ease-in forwards;
+  animation: fade-in-right 300ms 2.6s ease-in forwards;
 }
 .menu .button-principal {
-  margin: 2.5rem 0 0 0;
+  margin-top: 2.5rem;
 }
 
 /* Styles pour le loader */
