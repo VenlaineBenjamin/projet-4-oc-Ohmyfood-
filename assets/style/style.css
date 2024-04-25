@@ -145,6 +145,8 @@ button {
 html {
   font-family: "Roboto", sans-serif;
   line-height: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 h1,
@@ -178,6 +180,8 @@ h2 {
 
 p {
   line-height: 2rem;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 h3 {
@@ -399,11 +403,6 @@ h3 {
 .menu-card__check i {
   color: white;
   font-size: 1.7rem;
-  transform: rotate(180deg);
-  transition: transform 200ms 100ms ease-in-out;
-}
-.menu-card:hover i {
-  transform: rotate(0deg);
 }
 .menu-card:hover .menu-card__check {
   transform: translateX(0);

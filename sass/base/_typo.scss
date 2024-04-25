@@ -1,6 +1,8 @@
 html {
     font-family: $police-font-text;
     line-height: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
 }
 
 h1,
@@ -31,6 +33,8 @@ h2 {
 
 p {
     line-height: 2rem;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 h3 {
