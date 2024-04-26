@@ -656,7 +656,8 @@ h3 {
   }
   to {
     opacity: 0;
-    display: none;
+    position: absolute;
+    top: -999999px;
   }
 }
 
