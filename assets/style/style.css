@@ -463,10 +463,6 @@ h3 {
   animation: fade-in 300ms 2.6s ease-in forwards;
 }
 
-.fonction-card:nth-child(4) {
-  animation: fade-in 300ms 2.6s ease-in forwards;
-}
-
 .hero-header {
   height: 7.0625rem;
   background-color: white;
@@ -794,15 +790,15 @@ main {
 }
 .menu__section__entrees {
   opacity: 0;
-  animation: fade-in-right 300ms 2s ease-in forwards;
+  animation: fade-in-right 300ms ease-in forwards;
 }
 .menu__section__plats {
   opacity: 0;
-  animation: fade-in-left 300ms 2.3s ease-in forwards;
+  animation: fade-in-left 300ms 0.3s ease-in forwards;
 }
 .menu__section__desserts {
   opacity: 0;
-  animation: fade-in-right 300ms 2.6s ease-in forwards;
+  animation: fade-in-right 300ms 0.6s ease-in forwards;
 }
 .menu .button-principal {
   margin-top: 2.5rem;

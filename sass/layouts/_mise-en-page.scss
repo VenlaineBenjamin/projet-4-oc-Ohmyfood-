@@ -242,7 +242,3 @@
 .fonction-card:nth-child(3) {
     @include anim_fade_in(2.6s);
 }
-
-.fonction-card:nth-child(4) {
-    @include anim_fade_in(2.6s);
-}

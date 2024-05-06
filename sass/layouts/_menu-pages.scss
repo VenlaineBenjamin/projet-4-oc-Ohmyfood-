@@ -98,17 +98,17 @@ main {
 
         &__entrees {
             opacity: 0;
-            animation: fade-in-right 300ms 2s ease-in forwards;
+            animation: fade-in-right 300ms ease-in forwards;
         }
 
         &__plats {
             opacity: 0;
-            animation: fade-in-left 300ms 2.3s ease-in forwards;
+            animation: fade-in-left 300ms 0.3s ease-in forwards;
         }
 
         &__desserts {
             opacity: 0;
-            animation: fade-in-right 300ms 2.6s ease-in forwards;
+            animation: fade-in-right 300ms 0.6s ease-in forwards;
         }
     }
 
